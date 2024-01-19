@@ -3,16 +3,18 @@ import Layout from "../layouts/Layout.astro";
 import H1 from "../components/H1.astro";
 import Main from "../components/Main.astro";
 import { Image } from "astro:assets";
+
+export const prerender = true;
 ---
 
 <Layout title="Welcome to Astro." description="Learning Astro">
   <Main>
     <H1 text="Learning Astro" />
-    <Image
+    <!-- <Image
       height={500}
       width={500}
       src="https://cdn.pixabay.com/photo/2023/05/16/17/07/flower-7998134_1280.jpg"
       alt=""
-    />
+    /> -->
   </Main>
 </Layout>
